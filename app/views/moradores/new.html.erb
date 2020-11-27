@@ -1,0 +1,16 @@
+<h1>Adicionar Morador</h1>
+
+<%= form_for @morador, url: moradores_path, local: true do |m| %>
+
+  <%= m.label :nome %>:
+  <%= m.text_field :nome %><br />
+
+  <%= m.label :num_apto %>:
+  <%= m.text_field :num_apto %><br />
+
+  <%= m.label :cpf %>:
+  <%= m.text_field :cpf %><br />
+
+  <%= m.submit %>
+
+<% end %>
